@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Graph E – Instant Graphs from Excel & CSV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="icon.png">
+</head>
+<body>
+
+<header>
+  <h1>📊 Graph Editor</h1>
+  <p>Create instant graphs from Excel, CSV or pasted data</p>
+  <div class="actions">
+    <a class="btn primary" href="extension.zip" download="Extension">Download extension zip</a>
+    <a class="btn secondary" href="#tool">Use Web Version</a>
+  </div>
+</header>
+
+<section class="about">
+  <h2>About Graph Editor</h2>
+  <p>
+    Graphify lets you visualize data instantly without Excel,
+    Python, login, or installation. Upload once, generate graphs,
+    download images — done.
+  </p>
+</section>
+
+<section id="tool" class="tool">
+  <h2>Use Graph Online Editor</h2>
+
+  <input type="file" id="fileInput" accept=".csv,.xlsx" />
+  
+
+  <div class="table-container">
+    <table id="dataTable">
+      <thead></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <div class="controls">
+    <select id="xCol"></select>
+    <select id="yCol"></select>
+    <select id="chartType">
+      <option value="line">Line</option>
+      <option value="bar">Bar</option>
+      <option value="scatter">Scatter</option>
+      <option value="pie">Pie</option>
+    </select>
+    <button id="generate">Generate Graph</button>
+  </div>
+
+  <div class="chart-wrapper">
+    <canvas id="chart"></canvas>
+    </div>
+
+  <button id="download" style="display:none;">Download Image</button>
+</section>
+
+<footer>
+  <p>© 2026 Graph Editor · No login · No storage · Privacy-first</p>
+</footer>
+
+<script src="chart.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

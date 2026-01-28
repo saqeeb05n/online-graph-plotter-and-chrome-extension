@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8f9fb;
+  color: #333;
+}
+
+header {
+  padding: 60px 20px;
+  text-align: center;
+  background: #4f46e5;
+  color: white;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+.actions {
+  margin-top: 20px;
+}
+
+.btn, button, #fileInput, select {
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  margin: 5px;
+  display: inline-block;
+}
+
+.primary {
+  background: white;
+  color: #4f46e5;
+  font-weight: bold;
+}
+
+.secondary {
+  border: 2px solid white;
+  color: white;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.table-container {
+  max-height: 250px;
+  overflow: auto;
+  border: 1px solid #ccc;
+  background: white;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 6px;
+  font-size: 14px;
+}
+
+td {
+  min-width: 80px;
+}
+
+.controls {
+  margin: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+canvas {
+  width: 100% !important;
+  height: auto !important;
+  background: white;
+  margin-top: 15px;
+}
+
+.chart-wrapper {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+  aspect-ratio: 16 / 9;   /* 👈 key */
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #eee;
+  margin-top: 40px;
+}
+
+
+/* ---------- MOBILE TWEAKS ---------- */
+@media (max-width: 768px) {
+
+  header {
+    padding: 40px 15px;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  header p {
+    font-size: 16px;
+  }
+
+  .actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn {
+    width: 90%;
+    text-align: center;
+  }
+
+  section {
+    padding: 25px 15px;
+  }
+
+  /* Table handling */
+  .table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  table {
+    min-width: 600px; /* important */
+    font-size: 13px;
+  }
+
+  th, td {
+    padding: 6px;
+    white-space: nowrap;
+  }
+
+  /* Controls stack */
+  .controls {
+    flex-direction: column;
+  }
+
+  .controls select,
+  .controls button {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  /* Chart */
+  canvas {
+    height: 260px !important;
+  }
+
+  #download {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+  }
+}

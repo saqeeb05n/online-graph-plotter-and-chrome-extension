@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Graph Editor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="editor.css">
+</head>
+<body>
+
+<header>
+  <h1>📊 Graph Editor</h1>
+  <p>No login · No storage · Data stays while tab is open</p>
+</header>
+
+<main>
+
+<input type="file" id="fileInput" accept=".csv,.xlsx">
+
+<div class="table-container">
+  <table id="dataTable">
+    <thead></thead>
+    <tbody></tbody>
+  </table>
+</div>
+
+<div class="controls">
+  <select id="xCol"></select>
+  <select id="yCol"></select>
+  <select id="chartType">
+    <option value="line">Line</option>
+    <option value="bar">Bar</option>
+    <option value="scatter">Scatter</option>
+    <option value="pie">Pie</option>
+  </select>
+  <button id="generate">Generate</button>
+</div>
+
+<div class="chart-wrapper">
+  <canvas id="chart"></canvas>
+</div>
+
+<button id="download" style="display:none;">Download Image</button>
+
+</main>
+
+<script src="chart.min.js"></script>
+<script src="editor.js"></script>
+</body>
+</html>

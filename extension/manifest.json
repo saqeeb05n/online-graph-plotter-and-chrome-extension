@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Graphify",
+  "version": "1.0",
+  "description": "Instant graphs from CSV, Excel or pasted data",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "128": "icon.png"
+  }
+}
