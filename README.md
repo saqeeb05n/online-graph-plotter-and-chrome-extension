@@ -1,5 +1,7 @@
 # 📊 Graph Plotter / Editor
 
+https://graph-plotter-editor.netlify.app/
+
 A lightweight, privacy-friendly **graph plotting tool** that allows users to upload Excel/CSV files **or directly paste/type data like a spreadsheet**, select columns, and instantly generate downloadable graphs — **without login, without storage, and without saving any data**.
 
 The tool works as:
